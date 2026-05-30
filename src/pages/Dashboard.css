@@ -1,0 +1,12 @@
+.dashboard-top-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-6);
+  margin-bottom: var(--spacing-8);
+}
+
+@media (max-width: 1024px) {
+  .dashboard-top-section {
+    grid-template-columns: 1fr;
+  }
+}
