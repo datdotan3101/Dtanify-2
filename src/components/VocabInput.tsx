@@ -110,7 +110,9 @@ const VocabInput: React.FC = () => {
     try {
       const parsedRows = await readXlsxFile(file);
       const data = parsedRows.map(row => ({
+        // @ts-ignore
         word: row[0]?.toString() || '',
+        // @ts-ignore
         meaning: row[1]?.toString() || ''
       })).filter(r => r.word);
       
